@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EcoRoute</string>
+    <string name="google_maps_api_key">AIzaSyC62xPjOWjaBIs_Ffei-VXhoR6JtzRDfgk</string>
+    <string name="title_activity_map_view.kt">MapView.kt</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="login_message">Iniciar sesión</string>
+    <string name="register_message">Crear cuenta</string>
+    <string name="google_login">Iniciar sesión con Google</string>
+    <string name="welcome">¡Bienvenido de nuevo!</string>
+    <string name="mail">Correo</string>
+    <string name="accept_privacity">Acepto los terminos de uso y la política de privacidad</string>
+    <string name="password">Contraseña</string>
+    <string name="next">Siguiente</string>
+    <string name="compulsory_text">Los campos marcados con " * " son obligatorios</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="title_activity_vehicles_usuari">VehiclesUsuari</string>
+    <string name="editprofile">Editar perfil</string>
+    <string name="uservehicles">Mis vehículos</string>
+    <string name="userhistory">Mi historial</string>
+    <string name="existsaccount">¿Ya tienes una cuenta?</string>
+    <string name="uservalorations">Valoraciones</string>
+    <string name="userrewards">Mis recompensas</string>
+    <string name="usermarks">Mis marcadores</string>
+    <string name="logout_message">Cerrar sesión</string>
+    <string name="register_vehicle">Registrar vehículos</string>
+</resources>

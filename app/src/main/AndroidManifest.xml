@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ecoroute.ecoroute">
+    <!-- Agrega los permisos que necesita tu aplicación -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Agrega las características que necesita tu aplicación -->
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="true" />
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoRoute"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.EcoRoute">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+         </activity>
+        <activity
+            android:name=".VehiclesUsuari"
+            android:exported="false"
+            android:label="@string/title_activity_vehicles_usuari"
+            android:theme="@style/Theme.EcoRoute" >
+
+        </activity>
+
+        <!-- Agrega la clave de API de Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" >
+
+        </meta-data>
+
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EcoRoute" >
+
+        </activity>
+
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EcoRoute" >
+
+        </activity>
+
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EcoRoute" >
+
+        </activity>
+    </application>
+</manifest>
